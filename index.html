@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VixSys ERP - Gestão Industrial</title>
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fontes: DM Sans e DM Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Scripts Core (CDNs) -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide-react@latest"></script>
+
+    <script>
+        // Configuração do Tailwind com os tokens do VixSys
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sidebar: "#07111F",
+                        sidebarHov: "#0F1E32",
+                        sidebarAct: "#162847",
+                        accent: "#2563EB",
+                        accentDk: "#1D4ED8",
+                        accentLt: "#DBEAFE",
+                        success: "#10B981",
+                        successBg: "#ECFDF5",
+                        successBd: "#6EE7B7",
+                        danger: "#EF4444",
+                        dangerBg: "#FEF2F2",
+                        dangerBd: "#FECACA",
+                        warn: "#F59E0B",
+                        warnBg: "#FFFBEB",
+                        warnBd: "#FDE68A",
+                        info: "#0EA5E9",
+                        infoBg: "#F0F9FF",
+                        infoBd: "#BAE6FD",
+                        purple: "#8B5CF6",
+                        purpleBg: "#F5F3FF",
+                        purpleBd: "#DDD6FE",
+                        bg: "#F1F5F9",
+                        surface: "#FFFFFF",
+                        border: "#E2E8F0",
+                        borderDk: "#CBD5E1",
+                        text: "#0F172A",
+                        textSec: "#475569",
+                        textTer: "#94A3B8",
+                    },
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                        mono: ['DM Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bg text-text antialiased font-sans h-screen overflow-hidden">
+    <div id="root" class="h-full"></div>
+
+    <!-- Script Externo (JSX) -->
+    <script type="text/babel" src="script.js"></script>
+</body>
+</html>
