@@ -1,67 +1,43 @@
-/* Estilos customizados para o VixSys ERP */
+/* ====================== VIXSYS - styles.css ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #F0F2F5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C3C9D5; border-radius: 99px; }
+
+input, select, button { font-family: inherit; }
+
+input:focus, select:focus {
+  outline: 2px solid #C8D400;
+  outline-offset: 1px;
+  border-radius: 6px;
+}
+
+/* Animações */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .page-anim {
-    animation: fadeSlide 0.25s ease-out;
-}
-
-@keyframes fadeSlide {
-    from {
-        opacity: 0;
-        transform: translateY(8px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Scrollbar Customizada */
-.custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #CBD5E1;
-    border-radius: 99px;
-}
-
-/* Efeito Hover Lift */
-.hover-lift {
-    transition: all 0.2s duration;
-}
-
-.hover-lift:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-/* Base Inputs */
-.input-base {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    border: 1px solid #E2E8F0;
-    border-radius: 0.5rem;
-    outline: none;
-    transition: all 0.2s;
-    font-size: 0.875rem;
-}
-
-.input-base:focus {
-    border-color: #2563EB;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-/* Utilitários Extras */
-.animate-spin-slow {
-    animation: spin 3s linear infinite;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  animation: fadeSlide 0.25s ease forwards;
 }
